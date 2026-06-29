@@ -33,11 +33,28 @@ body{
 
 .header-search{
     display:flex;
-    
+    padding:5px;
+    width:500px;
 }
 
 .header-search form{
     display:flex;
+    width:100%;
+    border: 1px solid black;
+    border-radius:25px;
+    overflow:hidden;    
+    background:white;
+}
+
+
+.header-search button{
+    border:none;
+    border-left: 1px solid black;
+    box-sizing: border-box;
+    padding:5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -49,4 +66,24 @@ body{
 
 .header span{
     cursor:pointer;
+}   
+
+.header-search input{
+    flex:1;
+    border:none;
+    padding-left:10px;
+    
 }
+
+.search-mic button{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:10px;
+    background-color:#ebe8e8;
+    border:1px solid #ddd;
+}
+
