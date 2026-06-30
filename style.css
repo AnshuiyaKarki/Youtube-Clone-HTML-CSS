@@ -7,7 +7,7 @@
 }
 body{
     font-family: "Roboto", sans-serif;
-    display:flex;
+    
 }
 
 
@@ -83,7 +83,141 @@ body{
     align-items: center;
     justify-content: center;
     margin-left:10px;
-    background-color:#ebe8e8;
     border:1px solid #ddd;
 }
+
+.search-mic button:hover{
+    background-color:#e5e5e5;
+
+}
+
+/* header ends */
+
+
+/* mainBody starts */
+.mainBody{
+    height: calc(100vh-70px);
+    display:flex;
+
+}
+
+
+/* sidebar starts */
+.sidebar{
+    height:100%;
+    width:250px;
+    overflow-y:scroll;
+}
+
+
+.sidebar-categories{
+   margin-top:15px;
+   margin-bottom:15px;
+}
+
+.sidebar-category{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:10px;
+}
+
+.sidebar-category:hover{
+    background-color: #e5e5e5;
+    cursor:pointer;
+}
+
+.sidebar::-webkit-scrollbar{
+    display: none; 
+}
+
+hr{
+    background-color: #e5e5e5;
+    height:1px;
+    border:none;
+}
+
+/* sidebar ends */
+
+/* recommendation starts */
+.recommendations{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.recommendations span{
+    border:1px solid #ddd;
+    padding:5px;
+    border-radius:5px;
+    
+    
+}
+.recommendations span:hover{
+    background-color: #e5e5e5;
+    cursor:pointer;
+    
+}
+
+.recommendations .material-icons{
+    border:1px solid #ddd;
+    padding:3px;
+    border-radius:5px;
+    margin-left:5px;
+    margin-right:5px;
+    
+}
+
+.recommendations span,
+.recommendations .material-icons{
+    box-sizing: border-box;
+}
+
+/* video */
+
+.videos{
+    background-color: #f9f9f9;
+    width:100%;
+    height:100%;
+    overflow-y:scroll;
+}
+
+.videos-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:16px;
+}
+
+.video{
+    width:320px;
+}
+
+.video-thumbnail img{
+    height:180px;
+    width:100%;
+    object-fit:cover;
+}
+
+.video-detail{
+    display: flex;
+    gap:12px;
+    margin-top:10px;
+
+}
+
+.video-detail .author img{
+    height:30px;
+    width:30px;
+    border-radius: 50%;
+}
+
+.title a,
+.title span{
+    text-decoration:none;
+    color:gray;
+    font-size:12px;
+
+}
+
 
